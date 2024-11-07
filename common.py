@@ -13,7 +13,7 @@ def save_as_scad(part, name):
 
 
 def save_as_stl(name):
-    subprocess.call([openscad_location, "-o", f"{name}.stl", "example001.scad"])
+    subprocess.call([openscad_location, "-o", f"{name}.stl", "{name}.scad"])
 
 def save_as_scad_and_stl(part):
     root = root_name()
